@@ -1,344 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta charset="utf-8"/>
-    <meta name="description" content="overview &amp; stats"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-
-    <title>宣城房、家宣城</title>
-
-    <link rel="stylesheet" href="/templates/ace/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/templates/ace/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/templates/ace/css/fonts.googleapis.com.css"/>
-    <link rel="stylesheet" href="/templates/ace/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style"/>
-    <link rel="stylesheet" href="/templates/ace/css/ace-part2.min.css" class="ace-main-stylesheet"/>
-    <link rel="stylesheet" href="/templates/ace/css/ace-skins.min.css"/>
-    <link rel="stylesheet" href="/templates/ace/css/ace-rtl.min.css"/>
-    <link rel="stylesheet" href="/templates/ace/css/ace-ie.min.css"/>
-
-    <script src="/templates/ace/js/ace-extra.min.js"></script>
-    <script src="/templates/ace/js/html5shiv.min.js"></script>
-    <script src="/templates/ace/js/respond.min.js"></script>
+    <% include("_head.html"){} %>
 </head>
 
 <body class="no-skin">
 <div id="navbar" class="navbar navbar-default ace-save-state">
-    <div class="navbar-container ace-save-state" id="navbar-container">
-        <!--系统logo区域-->
-        <div class="navbar-header pull-left">
-            <a href="index.html" class="navbar-brand">
-                <small>
-                    <i class="fa fa-leaf"></i>
-                    宣城房管理系统
-                </small>
-            </a>
-        </div>
-        <div class="navbar-buttons navbar-header pull-right" role="navigation">
-            <ul class="nav ace-nav">
-                <!--我的任务-->
-                <li class="grey dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-tasks"></i>
-                        <span class="badge badge-grey">4</span>
-                    </a>
-                    <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-check"></i>
-                            4个未完成的任务
-                        </li>
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar">
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">100个电话预约</span>
-                                            <span class="pull-right">65%</span>
-                                        </div>
-                                        <div class="progress progress-mini">
-                                            <div style="width:65%" class="progress-bar"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">3个带看</span>
-                                            <span class="pull-right">30%</span>
-                                        </div>
-                                        <div class="progress progress-mini">
-                                            <div style="width:30%" class="progress-bar progress-bar-danger"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">驻守1小时</span>
-                                            <span class="pull-right">15%</span>
-                                        </div>
-                                        <div class="progress progress-mini">
-                                            <div style="width:15%" class="progress-bar progress-bar-warning"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">后台任务</span>
-                                            <span class="pull-right">90%</span>
-                                        </div>
-                                        <div class="progress progress-mini progress-striped active">
-                                            <div style="width:90%" class="progress-bar progress-bar-success"></div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown-footer">
-                            <a href="#">
-                                查看更多任务
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!--站内通知-->
-                <li class="purple dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-bell icon-animated-bell"></i>
-                        <span class="badge badge-important">8</span>
-                    </a>
-                    <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-exclamation-triangle"></i>
-                            8条通知
-                        </li>
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar navbar-pink">
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>
-                                                今日热推房源
-                                            </span>
-                                            <span class="pull-right badge badge-info">+12</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="btn btn-xs btn-primary fa fa-user"></i>
-                                        余额不足...
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="clearfix">
-                                            <span class="pull-left">
-                                                <i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>
-                                                宣城市关于公积金的补充规则
-                                            </span>
-                                            <span class="pull-right badge badge-success">+1</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-footer">
-                            <a href="#">
-                                查看更多通知
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!--我的邮件-->
-                <li class="green dropdown-modal">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
-                        <span class="badge badge-success">5</span>
-                    </a>
-                    <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-                        <li class="dropdown-header">
-                            <i class="ace-icon fa fa-envelope-o"></i>
-                            5封邮件
-                        </li>
-                        <li class="dropdown-content">
-                            <ul class="dropdown-menu dropdown-navbar">
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="/templates/ace/images/avatars/avatar.png" class="msg-photo"
-                                             alt="Alex's Avatar"/>
-                                        <span class="msg-body">
-                                            <span class="msg-title">
-                                                <span class="blue">张元龙:</span>
-                                                郝哥，一房有吗...
-                                            </span>
-                                            <span class="msg-time">
-                                                <i class="ace-icon fa fa-clock-o"></i>
-                                                <span>1分钟之前</span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="clearfix">
-                                        <img src="/templates/ace/images/avatars/avatar5.png" class="msg-photo"
-                                             alt="Fred's Avatar"/>
-                                        <span class="msg-body">
-                                            <span class="msg-title">
-                                                <span class="blue">王全:</span>
-                                                今天晚上来总部参加会议  ...
-                                            </span>
-                                            <span class="msg-time">
-                                                <i class="ace-icon fa fa-clock-o"></i>
-                                                <span>10:09</span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-footer">
-                            <a href="inbox.html">
-                                查看更多邮件
-                                <i class="ace-icon fa fa-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="light-blue dropdown-modal">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="/templates/ace/images/avatars/user.jpg" alt="Jason's Photo"/>
-                        <i class="ace-icon fa fa-caret-down"></i>
-                    </a>
-                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-cog"></i>
-                                设置
-                            </a>
-                        </li>
-                        <li>
-                            <a href="profile.html">
-                                <i class="ace-icon fa fa-user"></i>
-                                个人信息
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-power-off"></i>
-                                注销登录
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <% include("_header.html"){} %>
 </div>
 
 <div class="main-container ace-save-state" id="main-container">
 
     <div id="sidebar" class="sidebar responsive ace-save-state">
         <!--菜单区域-->
-        <ul class="nav nav-list">
-            <li class="active">
-                <a href="index.html">
-                    <i class="menu-icon fa fa-home"></i>
-                    <span class="menu-text">我的首页</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="#" class="dropdown-toggle">
-                    <i class="menu-icon fa fa-desktop"></i>
-                    <span class="menu-text">多级菜单</span>
-                    <b class="arrow fa fa-angle-down"></b>
-                </a>
-                <b class="arrow"></b>
-                <ul class="submenu">
-                    <li class="">
-                        <a href="typography.html">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            二级菜单
-                        </a>
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#" class="dropdown-toggle">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            三级菜单
-                            <b class="arrow fa fa-angle-down"></b>
-                        </a>
-                        <b class="arrow"></b>
-                        <ul class="submenu">
-                            <li class="">
-                                <a href="top-menu.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    菜单一
-                                </a>
-                                <b class="arrow"></b>
-                            </li>
-                            <li class="">
-                                <a href="two-menu-1.html">
-                                    <i class="menu-icon fa fa-caret-right"></i>
-                                    菜单二
-                                </a>
-                                <b class="arrow"></b>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="">
-                        <a href="#" class="dropdown-toggle">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            带图标的三级菜单
-                            <b class="arrow fa fa-angle-down"></b>
-                        </a>
-                        <b class="arrow"></b>
-                        <ul class="submenu">
-                            <li class="">
-                                <a href="#">
-                                    <i class="menu-icon fa fa-leaf green"></i>
-                                    Item #1
-                                </a>
-                                <b class="arrow"></b>
-                            </li>
-                            <li class="">
-                                <a href="#" class="dropdown-toggle">
-                                    <i class="menu-icon fa fa-pencil orange"></i>
-                                    四级菜单
-                                    <b class="arrow fa fa-angle-down"></b>
-                                </a>
-                                <b class="arrow"></b>
-                                <ul class="submenu">
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-plus purple"></i>
-                                            Add Product
-                                        </a>
-                                        <b class="arrow"></b>
-                                    </li>
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-eye pink"></i>
-                                            View Products
-                                        </a>
-                                        <b class="arrow"></b>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <% include("_menu.html"){} %>
 
         <!--菜单收紧按钮-->
         <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
@@ -350,14 +25,7 @@
     <div class="main-content">
         <div class="main-content-inner">
             <!--面包屑区域-->
-            <div class="breadcrumbs ace-save-state" id="breadcrumbs">
-                <ul class="breadcrumb">
-                    <li>
-                        <i class="ace-icon fa fa-home home-icon"></i>
-                        <a href="#">我的首页</a>
-                    </li>
-                </ul>
-            </div>
+            <% include("_breadPath.html"){} %>
 
             <!--内容区域-->
             <div class="page-content">
@@ -379,37 +47,12 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="footer-inner">
-            <div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">宣城房</span>
-							管理系统 &copy; 2019-2020
-						</span>&nbsp; &nbsp;
-                <!--公司信息首页链接-->
-                <!--<span class="action-buttons">
-                    <a href="#">
-                        <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-                    </a>
-                </span>-->
-            </div>
-        </div>
-    </div>
+    <!--脚部区域-->
+    <% include("_footer.html"){} %>
+
 </div>
 
-<script src="/templates/ace/js/jquery-2.1.4.min.js"></script>
-<script src="/templates/ace/js/jquery-1.11.3.min.js"></script>
-<script src="/templates/ace/js/bootstrap.min.js"></script>
-<script src="/templates/ace/js/excanvas.min.js"></script>
-<script src="/templates/ace/js/jquery-ui.custom.min.js"></script>
-<script src="/templates/ace/js/jquery.ui.touch-punch.min.js"></script>
-<script src="/templates/ace/js/jquery.easypiechart.min.js"></script>
-<script src="/templates/ace/js/jquery.sparkline.index.min.js"></script>
-<script src="/templates/ace/js/jquery.flot.min.js"></script>
-<script src="/templates/ace/js/jquery.flot.pie.min.js"></script>
-<script src="/templates/ace/js/jquery.flot.resize.min.js"></script>
-<script src="/templates/ace/js/ace-elements.min.js"></script>
-<script src="/templates/ace/js/ace.min.js"></script>
+<% include("_js.html"){} %>
 <script type="text/javascript">
     jQuery(function ($) {
 

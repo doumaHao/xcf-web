@@ -1,0 +1,26 @@
+<div class="navbar-container ace-save-state" id="navbar-container">
+    <!--系统logo区域-->
+    <div class="navbar-header pull-left">
+        <a href="index.html" class="navbar-brand">
+            <small>
+                <i class="fa fa-leaf"></i>
+                宣城房管理系统
+            </small>
+        </a>
+    </div>
+    <div class="navbar-buttons navbar-header pull-right" role="navigation">
+        <ul class="nav ace-nav">
+            <!--我的任务-->
+            <% include("_myJob.html"){} %>
+
+            <!--站内通知-->
+            <% include("_myNotice.html"){} %>
+
+            <!--我的邮件-->
+            <% include("_myMail.html"){} %>
+
+            <!--我的信息-->
+            <% include("_myInfo.html"){} %>
+        </ul>
+    </div>
+</div>
