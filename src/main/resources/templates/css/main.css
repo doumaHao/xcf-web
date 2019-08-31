@@ -1,3 +1,20 @@
-.top-menu{
-
+.table {
+    text-align: left;
+}
+.table .page{
+    display: inline-block;
+}
+.table .record{
+    display: inline-block;
+    margin-left:20px;
+}
+.table .record input{
+    width: 50px;
+}
+.table .go{
+    display: inline-block;
+    margin-left:20px;
+}
+.table .go input{
+    width: 50px;
 }

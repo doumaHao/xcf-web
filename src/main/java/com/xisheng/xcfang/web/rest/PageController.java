@@ -21,4 +21,9 @@ public class PageController {
         return "html/index.html";
     }
 
+    @GetMapping("/list")
+    public String list() {
+        return "html/demo_list.html";
+    }
+
 }

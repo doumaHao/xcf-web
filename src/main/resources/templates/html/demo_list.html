@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include("_head.html"){} %>
+</head>
+
+<body class="no-skin">
+<div id="navbar" class="navbar navbar-default ace-save-state">
+    <% include("_header.html"){} %>
+</div>
+
+<div class="main-container ace-save-state" id="main-container">
+
+    <div id="sidebar" class="sidebar responsive ace-save-state">
+        <!--菜单区域-->
+        <% include("_menu.html"){} %>
+
+        <!--菜单收紧按钮-->
+        <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+            <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state"
+               data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!--面包屑区域-->
+            <% include("_breadPath.html"){} %>
+
+            <!--内容区域-->
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!--首页通知信息-->
+                        <div class="alert alert-block alert-success">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <i class="ace-icon fa fa-times"></i>
+                            </button>
+                            系统通知：尊敬的XX先生，您的账户余额不足，将于2019年08月19日冻结，请及时充值。
+                        </div>
+                        <!--分割虚线-->
+                        <div class="hr hr32 hr-dotted"></div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-header">
+                                    Results for "Latest Registered Domains"
+                                </div>
+                                <div>
+                                    <table id="dynamic-table" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th class="center">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace"/>
+                                                    <span class="lbl"></span>
+                                                </label>
+                                            </th>
+                                            <th>Domain</th>
+                                            <th>Price</th>
+                                            <th class="hidden-480">Clicks</th>
+                                            <th>
+                                                <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                                                Update
+                                            </th>
+                                            <th class="hidden-480">Status</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="center">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace"/>
+                                                    <span class="lbl"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <a href="#">app.com</a>
+                                            </td>
+                                            <td>$45</td>
+                                            <td class="hidden-480">3,330</td>
+                                            <td>Feb 12</td>
+                                            <td class="hidden-480">
+                                                <span class="label label-sm label-warning">Expiring</span>
+                                            </td>
+                                            <td>
+                                                <div class="hidden-sm hidden-xs action-buttons">
+                                                    <a class="blue" href="#">
+                                                        <i class="ace-icon fa fa-search-plus bigger-130"></i>
+                                                    </a>
+
+                                                    <a class="green" href="#">
+                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                                    </a>
+
+                                                    <a class="red" href="#">
+                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">
+                                                <label class="pos-rel">
+                                                    <input type="checkbox" class="ace"/>
+                                                    <span class="lbl"></span>
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <a href="#">base.com</a>
+                                            </td>
+                                            <td>$35</td>
+                                            <td class="hidden-480">2,595</td>
+                                            <td>Feb 18</td>
+                                            <td class="hidden-480">
+                                                <span class="label label-sm label-success">Registered</span>
+                                            </td>
+                                            <td>
+                                                <div class="hidden-sm hidden-xs action-buttons">
+                                                    <a class="blue" href="#">
+                                                        <i class="ace-icon fa fa-search-plus bigger-130"></i>
+                                                    </a>
+                                                    <a class="green" href="#">
+                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                                    </a>
+                                                    <a class="red" href="#">
+                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer no-margin-top table">
+                                    <div class="page">
+                                        <span>每页显示</span>
+                                        <select>
+                                            <option  value="10">10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>
+                                    <div class="record">
+                                        <span>总共</span>
+                                        <input type="text" value="29" disabled>
+                                        <span>条记录</span>
+                                    </div>
+                                    <div class="go">
+                                        <span>跳转至</span>
+                                        <input type="text" value="8" maxlength="4">
+                                    </div>
+
+                                    <ul class="pagination pull-right no-margin">
+                                        <li class="prev disabled">
+                                            <a href="#"><i class="ace-icon fa fa-angle-double-left"></i></a></li>
+                                        <li class="prev disabled">
+                                            <a href="#"><i class="ace-icon fa fa-angle-left"></i></a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li class="next">
+                                            <a href="#"><i class="ace-icon fa fa-angle-right"></i></a></li>
+                                        <li class="next">
+                                            <a href="#"><i class="ace-icon fa fa-angle-double-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--脚部区域-->
+<% include("_footer.html"){} %>
+
+</div>
+
+<% include("_js.html"){} %>
+<script type="text/javascript">
+    jQuery(function ($) {
+
+    })
+</script>
+</body>
+</html>
