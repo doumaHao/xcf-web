@@ -12,8 +12,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class PageController {
 
     @GetMapping("/")
-    public String index() {
+    public String beelt() {
         return "index.html";
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "html/index.html";
     }
 
 }
