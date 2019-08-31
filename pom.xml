@@ -20,6 +20,7 @@
         <java.version>1.8</java.version>
         <spring.cloud.version>Dalston.SR4</spring.cloud.version>
         <spring.boot.version>1.5.7.RELEASE</spring.boot.version>
+        <beetl.version>1.2.13.RELEASE</beetl.version>
     </properties>
 
     <dependencies>
@@ -33,6 +34,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <!--beetl-->
+        <dependency>
+            <groupId>com.ibeetl</groupId>
+            <artifactId>beetl-framework-starter</artifactId>
+            <version>${beetl.version}</version>
+        </dependency>
 
         <!--spring-boot-test-->
         <dependency>
@@ -40,6 +47,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
